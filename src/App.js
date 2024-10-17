@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setProductData } from './redux/actions';
-import SalesTable from './components/SalesTable';
 import SalesGraph from './components/SalesGraph';
 import ProductDetails from './components/ProductDetails';
 import './styles/App.css';
@@ -36,10 +35,24 @@ const App = () => {
   }
 
   return (
-    <div>
-      <ProductDetails />
-      <SalesGraph />
-      {/* <SalesTable /> */}
+    <div className="app-container">
+      {/* Top Header */}
+      <div className="header">
+        <h1>Product Dashboard</h1>
+      </div>
+
+      {/* Main Content */}
+      <div className="content">
+        {/* Left Sidebar - Product Details */}
+        <div className="left-sidebar">
+          <ProductDetails />
+        </div>
+
+        {/* Right Section - Graph */}
+        <div className="main-body">
+          <SalesGraph />
+        </div>
+      </div>
     </div>
   );
 };

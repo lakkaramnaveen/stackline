@@ -1,4 +1,6 @@
-/* Global Layout */
+/* App.css */
+
+/* General layout styling */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f7fa;
@@ -6,37 +8,43 @@ body {
   padding: 0;
 }
 
-.container {
+/* Header */
+.header {
+  background-color: #0073e6; /* Blue color for the header */
+  height: 30px;              /* Height of the header */
   display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  align-items: center;        /* Vertically center content */
+  justify-content: center;    /* Center text horizontally */
+  color: white;
 }
 
-.left-column {
-  flex: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  margin-right: 20px;
-}
-
-.right-column {
-  flex: 3;
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-h1, h2 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-h1 {
-  font-size: 22px;
-}
-
-h2 {
+.header h1 {
+  margin: 0;
   font-size: 18px;
 }
+
+/* Main Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex: 1;                   /* Take remaining height after header */
+}
+
+.left-sidebar {
+  flex: 0 0 25%;             /* Sidebar takes 25% of the width */
+  background-color: white;
+  padding: 20px;
+  border-right: 1px solid #e5e5e5;
+}
+
+.main-body {
+  flex: 1;                   /* Main body takes the remaining width */
+  padding: 20px;
+}
+
+

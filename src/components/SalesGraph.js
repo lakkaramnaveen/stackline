@@ -1,7 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { useSelector } from 'react-redux';
-import '../styles/SalesGraph.css';  // Import the styles
+import '../styles/SalesGraph.css';  // Import the CSS for Sales Graph
 
 const SalesGraph = () => {
   const productData = useSelector((state) => state.productData);
