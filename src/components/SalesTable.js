@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import '../styles/SalesTable.css';  // Import the CSS
+import '../styles/SalesTable.css';  // Import the styles
 
 const SalesTable = () => {
   const productData = useSelector(state => state.productData);

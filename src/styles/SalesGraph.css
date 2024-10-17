@@ -1,13 +1,44 @@
+/* Sales Graph Container */
 .sales-graph {
-    padding: 20px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    background-color: #fafafa;
-  }
-  
-  .sales-graph h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
+  margin-bottom: 40px;
+}
+
+.sales-graph h2 {
+  text-align: left;
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Sales Table */
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-table th, .sales-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sales-table th {
+  background-color: #f5f7fa;
+  font-weight: bold;
+  font-size: 14px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.sales-table td {
+  color: #555;
+  font-size: 14px;
+}
+
+.sales-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.sales-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
