@@ -1,0 +1,17 @@
+/* Header */
+.header {
+    background-color: #1b2c4d; /* Darker blue to match Stackline */
+    height: 60px;              /* Reduced height */
+    display: flex;
+    align-items: center;        /* Vertically center content */
+    justify-content: center;    /* Center the title horizontally */
+    color: white;
+    font-size: 18px;            /* Adjusted font size */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;            /* Larger font for the title */
+  }
+  
