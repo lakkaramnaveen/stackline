@@ -4,6 +4,8 @@ import { setProductData } from './redux/actions';
 import SalesGraph from './components/SalesGraph';
 import ProductDetails from './components/ProductDetails';
 import './styles/App.css';
+import SalesTable from './components/SalesTable';
+import stacklineLogo from './static/stackline_logo.svg'; 
 
 const App = () => {
   const dispatch = useDispatch();
@@ -36,19 +38,17 @@ const App = () => {
 
   return (
     <div className="app-container">
-      {/* Top Header */}
+      {/* Header with Logo and Title */}
       <div className="header">
-        <h1>Product Dashboard</h1>
+        <img src={stacklineLogo} alt="Stackline Logo" className="logo" />
+        {/* <h1>Product Dashboard</h1> */}
       </div>
 
       {/* Main Content */}
       <div className="content">
-        {/* Left Sidebar - Product Details */}
         <div className="left-sidebar">
           <ProductDetails />
         </div>
-
-        {/* Right Section - Graph */}
         <div className="main-body">
           <SalesGraph />
         </div>

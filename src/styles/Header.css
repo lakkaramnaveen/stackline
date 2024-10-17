@@ -1,17 +1,24 @@
 /* Header */
 .header {
-    background-color: #1b2c4d; /* Darker blue to match Stackline */
-    height: 60px;              /* Reduced height */
+    background-color: #1b2c4d;  /* Dark blue header */
+    height: 60px;               /* Adjusted height */
     display: flex;
-    align-items: center;        /* Vertically center content */
-    justify-content: center;    /* Center the title horizontally */
+    align-items: center;
+    justify-content: space-between;
     color: white;
-    font-size: 18px;            /* Adjusted font size */
+    padding: 0 20px;
+  }
+  
+  .header .logo {
+    height: 40px;                /* Adjust the size of the logo */
+    margin-right: 20px;          /* Add space between logo and text */
   }
   
   .header h1 {
     margin: 0;
+    font-size: 22px;
     font-weight: bold;
-    font-size: 22px;            /* Larger font for the title */
+    flex-grow: 1;
+    text-align: center;          /* Center the text in the header */
   }
   
